@@ -8,6 +8,16 @@ export interface CustomButtonProps {
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   btnType?: "button" | "submit";
 }
+export interface FilterProps {
+  manufacturer?: string;
+  year?: number;
+  model?: string;
+  limit?: number;
+  fuel?: string;
+}
+export interface HomeProps {
+  searchParams: FilterProps;
+}
 export interface SearchManufactureProps {
   manufacture: string;
 
@@ -26,4 +36,16 @@ export interface CarProps {
   model: string;
   transmission: string;
   year: number;
+}
+export interface ShowMoreProps {
+  pageNumber: number;
+  isNext: boolean;
+}
+export interface OptionProps {
+  title: string;
+  value: string;
+}
+export interface CustomFilterProps {
+  title: string;
+  options: OptionProps[];
 }
