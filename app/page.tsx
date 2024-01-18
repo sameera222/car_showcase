@@ -1,10 +1,3 @@
-<<<<<<< Updated upstream
-import Image from 'next/image'
-import  {Hero,CustomFilter,SearchBar}  from '@/components';
-
-
-export default function Home() {
-=======
 import Image from 'next/image';
 import { fetchCars } from '@/utils';
 import {fuels, yearsOfProduction} from '@/constants';
@@ -24,7 +17,6 @@ export default async function Home({ searchParams }: HomeProps) {
   console.log(allCars, 'cars');
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
->>>>>>> Stashed changes
   return (
     <main className="overflow-hidden">
      <Hero/>
@@ -39,15 +31,6 @@ export default async function Home({ searchParams }: HomeProps) {
       </div>
       <div className='home__filters'>
           <SearchBar/>
-<<<<<<< Updated upstream
-          <div className='home__filter-container'>
-              <CustomFilter title='fuel'/>
-              <CustomFilter title='year'/>
-          </div>
-      </div>
-
-
-=======
           <div className='home__filter-container'>         
           <CustomFilter title='fuel' options={fuels}/>
               <CustomFilter title='year' options={yearsOfProduction} />
@@ -72,7 +55,6 @@ export default async function Home({ searchParams }: HomeProps) {
         <h2 className='text-black text-xl font-bold'>Oops, no results</h2>
       </div>
      )}
->>>>>>> Stashed changes
 
      </div>
     </main>

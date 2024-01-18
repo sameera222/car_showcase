@@ -12,7 +12,7 @@ interface CarDetailsProps {
   closeModal: () => void;
   car: CarProps;
 }
-const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
+ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
@@ -108,5 +108,6 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
     </>
   );
 };
+
 
 export default CarDetails;

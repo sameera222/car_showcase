@@ -1,16 +1,6 @@
 import { MouseEventHandler } from "react";
 
 export interface CustomButtonProps {
-<<<<<<< Updated upstream
-    title: string;
-    containerStyles?: string;
-    handleClick?: MouseEventHandler<HTMLButtonElement>;
-    btnType?: 'button' | 'submit';
-}
-export interface SearchManufactureProps{
-    manufacture: string;
-    setManufacture: (manufacture: string) => void;
-=======
   title: string;
   textStyles?:string;
   rightIcon?:string;
@@ -58,5 +48,4 @@ export interface OptionProps {
 export interface CustomFilterProps {
   title: string;
   options: OptionProps[];
->>>>>>> Stashed changes
 }
