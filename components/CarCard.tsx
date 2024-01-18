@@ -38,7 +38,6 @@ const CarCard = ({ car }: CarCardProps) => {
           className="object-contain"
           alt="car model"
           src="/hero.png"
-
         />
       </div>
       <div

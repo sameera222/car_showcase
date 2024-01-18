@@ -15,6 +15,7 @@ export {
     CarDetails,
     Footer,
     SearchBar,
+ 
     SearchManufacture,
     CustomFilter,
     CarCard,
